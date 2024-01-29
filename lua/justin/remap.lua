@@ -10,7 +10,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- Append next line to current line without moving the cursor
 vim.keymap.set("n", "J", "mzJ`z")
 
- -- Move half page up/down without moving the cursor
+-- Move half page up/down without moving the cursor
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
