@@ -19,3 +19,13 @@ require('mason-lspconfig').setup({
 		lsp_zero.default_setup,
 	},
 })
+require("mason-nvim-dap").setup({
+    automatic_setup = true,
+
+    ensure_installed = {
+        'codelldb',
+        'node2',
+    },
+
+    handlers = {},
+})

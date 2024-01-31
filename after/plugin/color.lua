@@ -4,6 +4,10 @@ require("rose-pine").setup({
 	},
 })
 
+require("catppuccin").setup({
+    no_italic = true,
+})
+
 function SetColor(color)
 	color = color or "catppuccin"
 	vim.cmd.colorscheme(color)
