@@ -10,10 +10,11 @@ end)
 require('mason').setup({})
 require('mason-lspconfig').setup({
 	ensure_installed = {
+        'clangd',
+        'rust_analyzer',
 		'tsserver',
 		'eslint',
-		'rust_analyzer',
-		'clangd',
+        'pyright',
 	},
 	handlers = {
 		lsp_zero.default_setup,
