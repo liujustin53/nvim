@@ -1,3 +1,11 @@
+require("mason-nvim-dap").setup({
+  automatic_setup = true,
+  ensure_installed = {
+    'codelldb',
+  },
+  handlers = {},
+})
+
 require("dapui").setup()
 
 local dap, dapui = require("dap"), require("dapui")
